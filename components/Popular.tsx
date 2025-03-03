@@ -18,11 +18,12 @@ const PopularTours = () => {
       </div>
 
       {/* Tour Cards Grid */}
-      <div className="grid grid-cols-1 w-full md:grid-cols-3 gap-y-6 gap-x-1">
+      <div className="flex justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1125px] mx-auto">
         {tourData.map((tour, index) => (
           <div
             key={tour.id}
-            className={`p-6 md:w-[355px] w-full md:h-[340px] md:ml-[37px] rounded-[10px] shadow-md border-[2px] ${
+            className={`p-6 md:w-[355px] w-full md:h-[340px] rounded-[10px] shadow-md border-[2px] ${
               tour.active ? "bg-[#A9DB57]" : "border-[#A9DB57]"
             }`}
           >
@@ -51,7 +52,7 @@ const PopularTours = () => {
             <div className="flex justify-center font-header font-bold  mt-4">
               <button
                 className={`border-[2px] w-[205px] h-[41px] bg-[#AADB594D] bg-opacity-30 text-black text-[14px] leading-[17.57px] px-6 py-1 rounded-full font-bold hover:bg-[#B2DA66] 
-            ${index % 3 === 1 ? "border-white" : "border-[#A9DB58]"}`}
+            ${index === 1 ? "border-white" : "border-[#A9DB58]"}`}
               >
                 Lets go!
               </button>
@@ -59,11 +60,13 @@ const PopularTours = () => {
           </div>
         ))}
       </div>
+      </div>
       <div className="mx-auto mt-8 mb-16 flex justify-center">
         <button className="mt-6 bg-[#AADB594D] border-[2px] border-[#A9DB58] hover:bg-[#B2DA66] bg-opacity-30 mx-auto md:text-[27px] text-[20px] font-header font-extrabold text-black px-6 md:w-[459px] w-[100%] md:h-[70px] h-[50px]  rounded-full">
           See more
         </button>
       </div>
+    
     </section>
   );
 };

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhoWeAre = () => {
   return (
-    <section className="relative w-full h-[368px] flex items-center justify-center">
+    <section className="relative   mx-auto h-[368px] flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

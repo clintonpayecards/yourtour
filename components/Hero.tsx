@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative flex md:flex-row flex-col items-center w-full mt-[94px] justify-between md:h-screen bg-white md:px-16 px-6 ">
+    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-[1483px] mx-auto mt-[94px]  h-[755px] bg-white px-6 md:px-16 ">
       {/* Left Gray Circle */}
-      <div className="absolute md:block hidden  top-[-50px] left-[-80px] w-48 h-48 bg-[#393C3E99]  rounded-full opacity-50"></div>
+      <div className="absolute md:block hidden xl:left-[-103px]  top-[-50px] left-[-80px] w-48 h-48 bg-[#393C3E99]  rounded-full bg-opacity-50 overflow-hidden"></div>
 
       {/* Text Content */}
-      <div className="relative z-10 flex-1 w-full  md:max-w-2xl">
+      <div className="relative z-10  w-full  ">
         <h3 className="md:text-[27px] text-[20px] md:w-[431px]  h-[34px] md:ml-[213px] font-header font-[1000] text-[#272624">
           Plan your dream travel with us.
         </h3>
@@ -40,17 +40,17 @@ const Hero = () => {
       </div>
 
       {/* Right Side - Images */}
-      <div className="absolute right-0 bottom-0 md:overflow-hidden">
+      <div className="absolute   right-0 bottom-0 md:overflow-hidden">
         {/* Large Gray Circle (Behind Zebra) */}
-        <div className="absolute md:block hidden top-[100px] left-[932px] w-[386px] h-[386px] bg-[#393C3E99] rounded-full  -z-5"></div>
+        <div className="absolute md:block hidden top-[100px] xl:left-[1200px] left-[932px] w-[386px] h-[386px] bg-[#393C3E99] rounded-full  -z-5"></div>
 
         {/* Spiral Image */}
-        <div className="absolute md:block hidden top-[300px] left-[704px] -z-5">
+        <div className="absolute md:block hidden xl:top-[400px] xl:left-[900px] top-[304px] left-[740px] -z-5">
           <Image
             src="/zebra-spiral.png"
             alt="Spiral"
-            width={300}
-            height={300}
+            width={500}
+            height={500}
             className=" w-[609px] h-[293px]"
           />
         </div>
@@ -59,14 +59,14 @@ const Hero = () => {
         <Image
           src="/zebra.png"
           alt="Zebra"
-          width={1400}
-          height={900}
-          className="object-cover hidden  md:block md:w-[1400px]  w-[2000px] min-w-[100%] md:relative z-20"
+          width={1000}
+          height={1000}
+          className="object-contain w-[1800px] md:flex hidden    z-20 relative"
         />
       </div>
 
       {/* Small Right Circle (Position Adjusted) */}
-      <div className="absolute md:block hidden top-[20%] right-[400px] w-[80px] h-[80px] bg-[#393C3E99] rounded-full opacity-50"></div>
+      <div className="absolute md:block hidden top-[20%] right-[400px] w-[80px] h-[80px] bg-[#393C3E99] rounded-full bg-opacity-50"></div>
     </section>
   );
 };

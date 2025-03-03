@@ -3,15 +3,15 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#888A8B] text-black py-16 px-3 md:px-24">
-      <div className="container md:mx-auto flex flex-col space-y-10">
+    <footer className="bg-[#888A8B] text-black py-16 px-24 ">
+      <div className="max-w-[1200px]  md:mx-auto flex flex-col space-y-10">
         
         {/* Top Row: Logo & Subscription */}
         <div className="flex flex-col md:flex-row justify-between ">
           
           {/* Logo & Tagline */}
           <div className="flex flex-col  md:items-start space-y-4 mb-6">
-            <Image src="/logo-africa.png" alt="Your Tour Logo" width={180} height={120} />
+            <Image src="/logo-africa.png" alt="Your Tour Logo" width={300} height={300} className="w-[148px] h-[100px]" />
             <h2 className="text-[40px] font-[1000] md:block hidden font-header text-[#AADB59] leading-[50.2px] text-center  h-[100px] md:text-left">
               dream <br /> travel.
             </h2>
@@ -23,14 +23,14 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-[363px] font-alt h-[46px] placeholder-black border-[1px] p-3 text-[19px] leading-[22.86px] border-black rounded-[40px] outline-none shadow-md"
+                className="w-[363px] font-alt h-[46px] placeholder-black border-[1px] p-3 text-[19px] leading-[22.86px] border-black bg-transparent rounded-[40px] outline-none shadow-md"
               />
               <button className="bg-[#AADB59] leading-[24.79px] text-black md:w-[164px] w-full h-[46px] px-6 py-3 rounded-full text-[19px] font-subtext shadow-md">
                 Subscribe
               </button>
             </div>
-            <div className="flex items-start space-x-2">
-              <input type="radio" className=" size-[30px] border-[1px] border-black" />
+            <div className="flex items-start  space-x-2">
+              <input type="radio" className="size-[30px] appearance-none border border-black rounded-full checked:bg-[#A9DB58] checked:border-black transition duration-300" />
               <p className="text-[12px] md:leading-[16.56px] leading-[20px] md:w-[329px] w-full h-[51px] text-black font-spiral">
                 I agree to be contacted by email or phone to receive information about fastcheckouts 
                 product, offers, and events. I understand I can unsubscribe at any time.
@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 md:gap-32 gap-20 text-start md:text-left">
           
           <div >
-            <h3 className=" font-subtext text-[18px] leading-[33px]">OUR TOURS</h3>
+            <h3 className=" font-subtext text-[18px] w-[143px] leading-[33px]">OUR TOURS</h3>
             <ul className="mt-3 space-y-2 font-alt text-[16px] leading-[30px]">
               <li>Our New Tours</li>
               <li>Africa</li>

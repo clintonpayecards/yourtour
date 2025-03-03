@@ -35,7 +35,7 @@ export const tourData = [
     description:
       "Souqs, savannas, safaris and the Sahara – the lure of Africa is its diverse wildlife, thousands of cultures and breathtaking landscapes",
     image: "/tour-2.png",
-    active: true, // The highlighted card
+     
   },
   {
     id: 6,

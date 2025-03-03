@@ -4,20 +4,27 @@ import { IoLogoWhatsapp, IoPaperPlaneOutline } from "react-icons/io5";
 
 const BlogSection = () => {
   return (
-    <section className="relative md:flex justify-between overflow-hidden min-h-[820px]">
+    <section className="relative w-full overflow-hidden ">
+      <div className="max-w-[1200px]   md:flex justify-between  overflow-hidden mx-auto ">
+
+    
       {/* Left Section - Image */}
-      <div className="absolute md:block hidden left-0 top-0 h-full overflow-hidden">
+     
+      <div className="absolute top-0 left-0 h-full md:flex hidden  overflow-hidden">
         <Image
           src="/tiger.png"
           alt="Tiger"
           width={500}
           height={500}
-          className="object-contain w-[1175px] h-[820px]"
+          className="object-contain w-[2000px] h-auto"
         />
       </div>
 
+     
+      
+
       {/* Right Section - Content */}
-      <div className="md:ml-auto md:w-1/2 px-10 py-16 mt-12 font-header relative z-10 bg-white">
+      <div className="ml-auto  px-10 py-16 mt-12 font-header relative z-10 bg-white">
         <h1 className="md:text-6xl text-[30px] font-extrabold">Blog.</h1>
 
         {/* Tabs */}
@@ -91,6 +98,18 @@ const BlogSection = () => {
         <IoPaperPlaneOutline size={15} />
         <FaFacebookF size={15} />
         <FaLinkedinIn size={15} />
+      </div>
+
+      <div className="absolute right-[-300px] bottom-2  p-4 rounded-l-2xl flex flex-col gap-4 text-black z-10">
+        <Image
+                    src="/zebra-spiral.png"
+                    alt="Spiral"
+                    width={500}
+                    height={500}
+                    className=" w-[410px] h-[197px]"
+                  />
+        
+      </div>
       </div>
     </section>
   );
