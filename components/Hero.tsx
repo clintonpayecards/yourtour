@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-[1483px] mx-auto mt-[94px]  h-[755px] bg-white px-6 md:px-16 ">
+    <section className="relative flex flex-col-reverse md:flex-row items-center justify-between w-full md:max-w-[1483px] mx-auto mt-[94px]  md:h-[755px] bg-white px-6 md:px-16 ">
       {/* Left Gray Circle */}
       <div className="absolute md:block hidden xl:left-[-103px]  top-[-50px] left-[-80px] w-48 h-48 bg-[#393C3E99]  rounded-full bg-opacity-50 overflow-hidden"></div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
           alt="Zebra"
           width={1000}
           height={1000}
-          className="object-contain w-[1800px] md:flex hidden    z-20 relative"
+          className="object-contain w-[2000px] md:flex hidden    z-20 relative"
         />
       </div>
 

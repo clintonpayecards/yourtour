@@ -3,8 +3,8 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#888A8B] text-black py-16 px-24 ">
-      <div className="max-w-[1200px]  md:mx-auto flex flex-col space-y-10">
+    <footer className="bg-[#888A8B] text-black py-16 md:px-24 px-6 ">
+      <div className="md:max-w-[1200px] w-full  md:mx-auto flex flex-col space-y-10">
         
         {/* Top Row: Logo & Subscription */}
         <div className="flex flex-col md:flex-row justify-between ">
@@ -23,15 +23,15 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-[363px] font-alt h-[46px] placeholder-black border-[1px] p-3 text-[19px] leading-[22.86px] border-black bg-transparent rounded-[40px] outline-none shadow-md"
+                className="md:w-[363px] w-full font-alt h-[46px] placeholder-black border-[1px] p-3 text-[19px] leading-[22.86px] border-black bg-transparent rounded-[40px] outline-none shadow-md"
               />
-              <button className="bg-[#AADB59] leading-[24.79px] text-black md:w-[164px] w-full h-[46px] px-6 py-3 rounded-full text-[19px] font-subtext shadow-md">
+              <button className="bg-[#AADB59] leading-[24.79px] text-black md:w-[164px] w-full h-[46px]  py-3 rounded-full text-[19px] font-subtext shadow-md">
                 Subscribe
               </button>
             </div>
             <div className="flex items-start  space-x-2">
               <input type="radio" className="size-[30px] appearance-none border border-black rounded-full checked:bg-[#A9DB58] checked:border-black transition duration-300" />
-              <p className="text-[12px] md:leading-[16.56px] leading-[20px] md:w-[329px] w-full h-[51px] text-black font-spiral">
+              <p className="md:text-[12px] text-[14px] md:leading-[16.56px] leading-[20px] md:w-[329px] w-full h-[51px] text-black font-spiral">
                 I agree to be contacted by email or phone to receive information about fastcheckouts 
                 product, offers, and events. I understand I can unsubscribe at any time.
               </p>
@@ -41,10 +41,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Row: Navigation Links */}
-        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-32 gap-20 text-start md:text-left">
+        <div className="grid grid-cols-2 md:grid-cols-4 px-6 md:px-0 md:gap-32 gap-20 text-start md:text-left">
           
           <div >
-            <h3 className=" font-subtext text-[18px] w-[143px] leading-[33px]">OUR TOURS</h3>
+            <h3 className=" font-subtext text-[18px]  leading-[33px]">OUR TOURS</h3>
             <ul className="mt-3 space-y-2 font-alt text-[16px] leading-[30px]">
               <li>Our New Tours</li>
               <li>Africa</li>
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className=" text-black w-full py-16 flex flex-col items-center space-y-6">
       {/* Contact Button */}
-      <button className="bg-[#C4FF61] text-black w-[190px] h-[46px] font-subtext  px-8 py-3 rounded-full text-[19px] leading-[24.79px]">
+      <button className="bg-[#C4FF61] text-black md:w-[190px] w-full h-[46px] font-subtext  px-8 py-3 rounded-full text-[19px] leading-[24.79px]">
         Contact us
       </button>
 

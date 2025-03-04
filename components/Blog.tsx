@@ -100,7 +100,7 @@ const BlogSection = () => {
         <FaLinkedinIn size={15} />
       </div>
 
-      <div className="absolute right-[-300px] bottom-2  p-4 rounded-l-2xl flex flex-col gap-4 text-black z-10">
+      <div className="absolute md:right-[-300px] right-[-350px] bottom-2  p-4 rounded-l-2xl flex flex-col gap-4 text-black z-10">
         <Image
                     src="/zebra-spiral.png"
                     alt="Spiral"
