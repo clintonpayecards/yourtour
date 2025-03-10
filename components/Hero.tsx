@@ -24,10 +24,7 @@ const Hero = () => {
         <div className="mt-10 md:ml-[86px] font-header  ">
           <div className="relative flex items-center justify-center bg-[#A9DB59] bg-opacity-30 border-[2px] border-[#A9DB58] px-6 py-4 rounded-full h-[70px] z-20 shadow-md md:w-[560px] w-full">
             {/* Centered Search Icon */}
-            <Search
-              className="absolute left-12 md:left-[40%] font-extrabold transform -translate-x-1/2 text-black"
-              size={30}
-            />
+            <Search className="absolute left-12 md:left-[40%] font-extrabold transform -translate-x-1/2 text-black" size={30} />
 
             {/* Input Field */}
             <input
@@ -42,27 +39,15 @@ const Hero = () => {
       {/* Right Side - Images */}
       <div className="absolute   right-0 bottom-0 md:overflow-hidden">
         {/* Large Gray Circle (Behind Zebra) */}
-        <div className="absolute md:block hidden top-[100px] xl:left-[1200px] left-[932px] w-[386px] h-[386px] bg-[#393C3E99] rounded-full  -z-5"></div>
+        <div className="absolute md:block hidden top-[100px] right-[-90px] w-[386px] h-[386px] bg-[#393C3E99] rounded-full  -z-5"></div>
 
         {/* Spiral Image */}
         <div className="absolute md:block hidden xl:top-[400px] xl:left-[900px] top-[304px] left-[740px] -z-5">
-          <Image
-            src="/zebra-spiral.png"
-            alt="Spiral"
-            width={500}
-            height={500}
-            className=" w-[609px] h-[293px]"
-          />
+          <Image src="/zebra-spiral.png" alt="Spiral" width={500} height={500} className=" w-[609px] h-[293px]" />
         </div>
 
         {/* Zebra Image */}
-        <Image
-          src="/zebra.png"
-          alt="Zebra"
-          width={1000}
-          height={1000}
-          className="object-contain w-[2000px] md:flex hidden    z-20 relative"
-        />
+        <Image src="/zebra.png" alt="Zebra" width={1000} height={1000} className="object-contain w-[2000px] md:flex hidden    z-20 relative" />
       </div>
 
       {/* Small Right Circle (Position Adjusted) */}
